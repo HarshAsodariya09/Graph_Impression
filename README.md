@@ -1,4 +1,3 @@
-# Graph_Impression
 # Impression Network Analysis
 
 This repository contains three Python programs and their corresponding documents that analyze a social impression network derived from `impression_2.csv`. These programs help in identifying leaders, discovering missing links, and evaluating centrality metrics like betweenness and clustering coefficients.
@@ -38,9 +37,12 @@ This repository contains three Python programs and their corresponding documents
 
 ## 📊 Dataset
 
-- **File:** `impression_2.csv`
-- **Description:** Contains impression data between individuals (likely email addresses).
-- **Usage:** All Python scripts depend on this file for constructing the graph.
+### `impression_2.csv`
+
+This file represents a real dataset collected from students on our campus. Each student was asked to list the top 30 individuals they felt most connected to or impressed by.  
+- **Column Format:** Each row starts with the student's own identifier (e.g., email or entry number), followed by up to 30 other identifiers.
+- **Interpretation:** An edge from student A to student B means A listed B in their top 30.
+- This forms the basis of a **directed graph** used for analysis in the provided Python scripts.
 
 ---
 
